@@ -61,8 +61,8 @@ return require('packer').startup(function(use)
     use { 'feline-nvim/feline.nvim', branch = '0.5-compat' }
 
     use { 'lewis6991/gitsigns.nvim' }
+    use { 'junegunn/gv.vim' }
 
-
-
+    use { "NvChad/nvterm" }
 
 end)
