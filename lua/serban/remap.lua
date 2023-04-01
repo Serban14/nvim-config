@@ -56,6 +56,6 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 
-vim.keymap.set('n', 'gh', 'K')
+-- vim.keymap.set('n', 'gh', 'K')
 
 
