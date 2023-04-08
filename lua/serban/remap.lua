@@ -38,7 +38,6 @@ vim.keymap.set("n", "Q", "<nop>")
 -- format whole buffer
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
--- dunno what this does
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")

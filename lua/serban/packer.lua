@@ -12,9 +12,15 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use { 'ellisonleao/gruvbox.nvim' }
+    -- Color themes
+    use { 'ellisonleao/gruvbox.nvim', as = "gruvbox" }
+    use { "catppuccin/nvim", as = "catppuccin" }
+    use { 'sainnhe/everforest', as = "everforest" }
+    use { 'folke/tokyonight.nvim' }
+    -- Transparent
+    -- use { "xiyaowong/transparent.nvim" }
 
-    use { 'nvim-treesitter/nvim-treesitter',  run = ':TSUpdate'  }
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
     use { 'theprimeagen/harpoon' }
 
