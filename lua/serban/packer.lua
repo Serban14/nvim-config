@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
 
     use { 'ellisonleao/gruvbox.nvim' }
 
-    use { 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' } }
+    use { 'nvim-treesitter/nvim-treesitter',  run = ':TSUpdate'  }
 
     use { 'theprimeagen/harpoon' }
 
@@ -64,7 +64,8 @@ return require('packer').startup(function(use)
     }
 
     use { 'lewis6991/gitsigns.nvim' }
-    use { 'junegunn/gv.vim' }
+    use { 'rbong/vim-flog' }
+    -- use { 'junegunn/gv.vim' }
 
     use { "NvChad/nvterm" }
 end)
