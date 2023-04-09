@@ -1,18 +1,20 @@
 function ColorBackground(color)
     color = color or "gruvbox"
     vim.cmd.colorscheme(color)
-    -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
 function SetTransparent(theme)
+
     if (theme == "tokyonight")
     then
         require("tokyonight").setup({
             style = "moon",
-            transparent = true
+            transparent = true,
+            styles = {
+                sidebars = "transparent",
+                floats = "transparent",
+            },
         })
-
     end
     if (theme == "gruvbox")
     then
@@ -20,13 +22,16 @@ function SetTransparent(theme)
             transparent_mode = true
         })
     end
-    if (theme == "catppuccin")
+    if(theme == "catppuccin")
     then
         require("catppuccin").setup({
             transparent_background = true
         })
     end
     vim.cmd.colorscheme(theme)
+
+    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
 -- gruvbox

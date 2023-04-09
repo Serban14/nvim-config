@@ -19,4 +19,5 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.NvimTreeToggle)
+vim.keymap.set("n", "<leader>tff", "<cmd>cd %:h<CR><cmd>NvimTreeFindFile!<CR>")
 

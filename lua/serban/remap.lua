@@ -23,7 +23,6 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 -- yank into clipboard
 vim.keymap.set({"n", ""}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
-
 -- paste from clipoard
 vim.keymap.set({"n", "v"}, "<leader>P", [["+p]])
 --
