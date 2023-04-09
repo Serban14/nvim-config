@@ -13,6 +13,7 @@ function SetTransparent(theme)
             styles = {
                 sidebars = "transparent",
                 floats = "transparent",
+                virtual_text = "transparent",
             },
         })
     end
@@ -25,13 +26,14 @@ function SetTransparent(theme)
     if(theme == "catppuccin")
     then
         require("catppuccin").setup({
+            flavour = "mocha",
             transparent_background = true
         })
     end
     vim.cmd.colorscheme(theme)
 
-    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+    -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+    -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
 -- gruvbox
@@ -42,7 +44,7 @@ end
 
 -- catppuccin
 -- ColorBackground("catppuccin")
--- SetTransparent("gruvbox")
+-- SetTransparent("catppuccin")
 -- ColorBackground("catppuccin-frappe")
 -- ColorBackground("catppuccin-mocha")
 -- ColorBackground("catppuccin-macchiato")

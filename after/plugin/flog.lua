@@ -1,1 +1,1 @@
-vim.keymap.set("n", "<leader>GV", function() vim.cmd("Flog -all") end )
+vim.keymap.set("n", "<leader>gv", function() vim.cmd("Flog -all") end )
