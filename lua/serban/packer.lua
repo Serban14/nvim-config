@@ -53,6 +53,8 @@ return require('packer').startup(function(use)
         }
     }
 
+    use { 'folke/trouble.nvim' }
+
 
     use { 'jiangmiao/auto-pairs' }
 
