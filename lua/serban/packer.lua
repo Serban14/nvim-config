@@ -59,12 +59,14 @@ return require('packer').startup(function(use)
     use { 'jiangmiao/auto-pairs' }
 
     use { 'vimwiki/vimwiki' }
-    use {
-        'nvim-tree/nvim-tree.lua',
-        requires = {
-            'nvim-tree/nvim-web-devicons', -- optional
-        },
-    }
+    -- use {
+    --     'nvim-tree/nvim-tree.lua',
+    --     requires = {
+    --         'nvim-tree/nvim-web-devicons', -- optional
+    --     },
+    -- }
+
+    use { 'stevearc/oil.nvim' }
 
     use {
         'nvim-lualine/lualine.nvim',
