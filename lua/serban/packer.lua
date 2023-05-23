@@ -17,8 +17,6 @@ return require('packer').startup(function(use)
     use { "catppuccin/nvim", as = "catppuccin" }
     use { 'sainnhe/everforest', as = "everforest" }
     use { 'folke/tokyonight.nvim' }
-    -- Transparent
-    -- use { "xiyaowong/transparent.nvim" }
 
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
@@ -59,13 +57,6 @@ return require('packer').startup(function(use)
     use { 'jiangmiao/auto-pairs' }
 
     use { 'vimwiki/vimwiki' }
-    -- use {
-    --     'nvim-tree/nvim-tree.lua',
-    --     requires = {
-    --         'nvim-tree/nvim-web-devicons', -- optional
-    --     },
-    -- }
-
     use { 'stevearc/oil.nvim' }
 
     use {
@@ -75,7 +66,10 @@ return require('packer').startup(function(use)
 
     use { 'lewis6991/gitsigns.nvim' }
     use { 'rbong/vim-flog' }
-    -- use { 'junegunn/gv.vim' }
+
+
+    -- Dap
+    use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
 
     use { "NvChad/nvterm" }
 end)
