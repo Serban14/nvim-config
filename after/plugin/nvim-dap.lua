@@ -9,8 +9,9 @@ vim.keymap.set('n', '<Leader>dr', function() require('dap').repl.open() end)
 vim.keymap.set('n', '<Leader>dl', function() require('dap').run_last() end)
 
 
-local dap, dapui = require("dap"), require("dapui")
+local dap, dapui, dapvirtual = require("dap"), require("dapui"), require("nvim-dap-virtual-text");
 dapui.setup()
+dapvirtual.setup()
 dap.listeners.after.event_initialized["dapui_config"] = function()
   dapui.open()
 end
@@ -20,6 +21,8 @@ end
 dap.listeners.before.event_exited["dapui_config"] = function()
   dapui.close()
 end
+
+
 
 
 dap.adapters.lldb = {

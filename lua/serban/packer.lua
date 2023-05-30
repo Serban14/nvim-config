@@ -70,6 +70,7 @@ return require('packer').startup(function(use)
 
     -- Dap
     use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
+    use { "theHamsta/nvim-dap-virtual-text" }
 
     use { "NvChad/nvterm" }
 end)

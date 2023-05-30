@@ -54,6 +54,11 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 
+vim.keymap.set({ "n", "v", "i" }, "<UP>", "<Nop>")
+vim.keymap.set({ "n", "v", "i" }, "<RIGHT>", "<Nop>")
+vim.keymap.set({ "n", "v", "i" }, "<LEFT>", "<Nop>")
+vim.keymap.set({ "n", "v", "i" }, "<DOWN>", "<Nop>")
+
 -- vim.keymap.set('n', 'gh', 'K')
 
 
