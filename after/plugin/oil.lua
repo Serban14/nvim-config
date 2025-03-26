@@ -1,6 +1,10 @@
 local oil = require("oil")
 
-oil.setup({})
+oil.setup({
+    preview_win = {
+        preview_method = "fast_scratch"
+    }
+})
 
 
 
