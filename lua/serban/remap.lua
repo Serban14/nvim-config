@@ -49,15 +49,34 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- source current file
-vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("so")
-end)
+vim.keymap.set("n", "<leader><leader>", function() vim.cmd("so") end)
+
+-- Line movement
+vim.keymap.set({"n", "x"}, "H", "^")
+vim.keymap.set({"n", "x"}, "L", "g_")
 
 
+-- Disable arrows
 vim.keymap.set({ "n", "v", "i" }, "<UP>", "<Nop>")
 vim.keymap.set({ "n", "v", "i" }, "<RIGHT>", "<Nop>")
 vim.keymap.set({ "n", "v", "i" }, "<LEFT>", "<Nop>")
 vim.keymap.set({ "n", "v", "i" }, "<DOWN>", "<Nop>")
+
+-- Bigger window movement
+vim.keymap.set("n", "<C-w><", "10<C-w><")
+vim.keymap.set("n", "<C-w>>", "10<C-w>>")
+vim.keymap.set("n", "<C-w>-", "10<C-w>-")
+vim.keymap.set("n", "<C-w>+", "10<C-w>+")
+
+-- buffer list and select
+-- vim.keymap.set("n", "gb", ":ls<CR>:b<Space>")
+
+-- buffer cycling
+vim.keymap.set("n", "<leader>n", "<cmd>bnext<cr>")
+vim.keymap.set("n", "<leader>p", "<cmd>bprevious<cr>")
+vim.keymap.set("n", "<leader>d", "<cmd>bdelete<cr>")
+-- buffer delete all and reopen current
+vim.keymap.set("n", "<leader>D", "<cmd>silent! %bd|e#|bd#<cr>")
 
 -- vim.keymap.set('n', 'gh', 'K')
 

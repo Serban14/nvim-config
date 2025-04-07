@@ -51,9 +51,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
 -- You'll find a list of language servers here:
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md
 -- These are example language servers. 
-require('lspconfig').zls.setup{}
-require('lspconfig').clangd.setup{}
-require('lspconfig').ruff.setup{}
+-- require('lspconfig').zls.setup{}
+-- require('lspconfig').clangd.setup{}
+-- require('lspconfig').ruff.setup{}
 
 
 local cmp = require('cmp')

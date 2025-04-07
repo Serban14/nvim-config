@@ -51,13 +51,13 @@ end
 -- ColorBackground("catppuccin-latte")
 
 -- everforest
--- vim.g.everforest_better_perfomance = 1
--- vim.g.everforest_background = 'hard'
--- ColorBackground("everforest")
+vim.g.everforest_better_perfomance = 1
+vim.g.everforest_background = 'hard'
+ColorBackground("everforest")
 
 -- Tokyonights
 -- ColorBackground("tokyonight")
-SetTransparent("tokyonight")
+-- SetTransparent("tokyonight")
 -- ColorBackground("tokyonight-night")
 -- ColorBackground("tokyonight-storm")
 -- ColorBackground("tokyonight-day")
