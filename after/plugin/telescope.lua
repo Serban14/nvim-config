@@ -17,6 +17,11 @@ require('telescope').setup{
       },
     },
   },
+  pickers = {
+      live_grep = {
+          theme = "ivy"
+      }
+  }
 }
 
 local builtin = require('telescope.builtin')
