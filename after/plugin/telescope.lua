@@ -31,7 +31,7 @@ vim.keymap.set('n', '<leader><C-p>', builtin.git_files, { desc = 'Telescope find
 vim.keymap.set('n', '<leader><C-f>', builtin.live_grep, { desc = 'Telescope live grep' })
 vim.keymap.set('n', 'gb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>g?', builtin.keymaps, { desc = 'Telescope keymaps help' })
--- vim.keymap.set('n', '<leader>ps', function()
+vim.keymap.set('n', '<leader>bb', builtin.git_branches, { desc = 'Telescope branch' })
 --     builtin.grep_string({ search = vim.fn.input("Grep > ") });
 -- end)
 

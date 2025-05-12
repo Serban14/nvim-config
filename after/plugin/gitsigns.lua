@@ -11,8 +11,8 @@ require('gitsigns').setup{
     -- Navigation
 
     if vim.wo.diff then
-        map("n", ']c', vim.cmd.normal({']c', bang = true}), { desc =  '' })
-        map("n", ']c', vim.cmd.normal({'[c', bang = true}), { desc =  '' })
+        map("n", ']c', vim.cmd.normal({']czz', bang = true}), { desc =  '' })
+        map("n", ']c', vim.cmd.normal({'[czz', bang = true}), { desc =  '' })
     else 
         map("n", ']c', "<cmd>lua require 'gitsigns'.nav_hunk('next')<cr>zz", { desc =  '' })
         map("n", '[c', "<cmd>lua require 'gitsigns'.nav_hunk('prev')<cr>zz", { desc =  '' })

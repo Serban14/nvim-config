@@ -66,11 +66,13 @@ vim.keymap.set({ "n", "v", "i" }, "<RIGHT>", "<Nop>")
 vim.keymap.set({ "n", "v", "i" }, "<LEFT>", "<Nop>")
 vim.keymap.set({ "n", "v", "i" }, "<DOWN>", "<Nop>")
 
--- Line movement
-vim.keymap.set("n", "<C-w><", "10<C-w><")
-vim.keymap.set("n", "<C-w>>", "10<C-w>>")
-vim.keymap.set("n", "<C-w>-", "10<C-w>-")
-vim.keymap.set("n", "<C-w>+", "10<C-w>+")
+-- Window resizing
+vim.keymap.set("n", "<C-w><", "20<C-w><")
+vim.keymap.set("n", "<C-w>>", "20<C-w>>")
+vim.keymap.set("n", "<C-w>-", "20<C-w>-")
+vim.keymap.set("n", "<C-w>+", "20<C-w>+")
+vim.keymap.set("n", "<C-w>|", "40<C-w>|")
+vim.keymap.set("n", "<C-w>_", "20<C-w>_")
 
 -- buffer list and select
 -- vim.keymap.set("n", "gb", ":ls<CR>:b<Space>")
